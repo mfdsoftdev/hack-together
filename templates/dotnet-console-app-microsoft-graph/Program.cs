@@ -11,4 +11,4 @@ var tokenCredential = new InteractiveBrowserCredential(interactiveBrowserCredent
 var graphClient = new GraphServiceClient(tokenCredential, scopes);
 
 var me = await graphClient.Me.GetAsync();
-Console.WriteLine($"Hello {me?.DisplayName}!");
+Console.WriteLine($"Hey {me?.DisplayName}!");
